@@ -1,0 +1,154 @@
+var friends = [{
+  "name":"deepika",
+  "photo":"https://i.pinimg.com/736x/21/72/20/21722088ac8ef13dc12f51d729c5f10c--deepika-padukone-hot-dipika-padukone.jpg",
+  "scores":[
+      5,
+      1,
+      4,
+      4,
+      5,
+      1,
+      2,
+      5,
+      4,
+      1
+    ]
+},
+
+{
+  "name":"ranbir",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      2,
+      5,
+      3,
+      2,
+      1,
+      4,
+      3,
+      1,
+      5,
+      1
+    ]
+},
+
+{
+  "name":"anushka",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      2,
+      5,
+      3,
+      4,
+      2,
+      4,
+      1,
+      2,
+      8,
+      1
+    ]
+},
+
+{
+  "name":"virat",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      2,
+      5,
+      3,
+      2,
+      1,
+      4,
+      3,
+      1,
+      5,
+      1
+    ]
+},
+{
+  "name":"alia",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      2,
+      5,
+      3,
+      2,
+      1,
+      4,
+      3,
+      1,
+      5,
+      1
+    ]
+},
+
+{
+  "name":"parineeti",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      2,
+      5,
+      3,
+      2,
+      1,
+      4,
+      3,
+      1,
+      5,
+      1
+    ]
+},
+
+{
+  "name":"rahul",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      2,
+      5,
+      3,
+      2,
+      1,
+      4,
+      3,
+      1,
+      5,
+      1
+    ]
+},
+
+{
+  "name":"milind",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      2,
+      5,
+      3,
+      2,
+      1,
+      4,
+      3,
+      1,
+      5,
+      1
+    ]
+},
+
+{
+  "name":"vidya",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      2,
+      5,
+      3,
+      2,
+      1,
+      4,
+      3,
+      1,
+      5,
+      1
+    ]
+},
+];
+
+module.exports = friends;
