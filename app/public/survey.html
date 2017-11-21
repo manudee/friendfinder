@@ -191,27 +191,44 @@
 		</div>
 		<script type="text/javascript">
 
-		$("body").on("click", ".selected", function(){
-			
-			
-		})
-
-
-
-			$("body").on("click", "#submit", function(){
-
+			$("body").on("click", "#submit", function(event){
+				event.preventDefault();
 				var friend = {};
 
 				friend.name = $("#name").val().trim();
 				friend.photo = $("#photo").val().trim();
 				friend.scores = [$("#q1").val(),$("#q2").val(),$("#q3").val(),$("#q4").val(),$("#q5").val(),$("#q6").val(),$("#q7").val(),$("#q8").val(),$("#q9").val(),$("#q10").val()];
 
-				console.log(friend);
+				// console.log(friend);
+				// console.log(friend.scores[2]);
 
-				$('#myModal').modal("show");
+				var scoresAdded = function(){
+						for (var i = 0; i < 10 ; i++) {
+							if(friend.scores[i] === null )
+								{	console.log(" friend.scores[i]" + friend.scores[i]);
+									return false;
+								}
+						}
+					return true;
+				};
+
+				// console.log(scoresAdded());
+				
+				if(friend.name === '' || friend.photo === '' || !scoresAdded())
+						alert("please fill out all the required fields and survey questions");
+
+
+				var currentURL = window.location.origin;
+
+				console.log("currentURL " + currentURL);
+
+				$.post("/api/friends", friend).done(function(data){
+					console.log(data);
+					$('#myModal').modal("show");
 
 			});
 
+	});
 
 
 		</script>
