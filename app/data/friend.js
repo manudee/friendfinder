@@ -1,6 +1,6 @@
 var friends = [{
   "name":"deepika",
-  "photo":"https://i.pinimg.com/736x/21/72/20/21722088ac8ef13dc12f51d729c5f10c--deepika-padukone-hot-dipika-padukone.jpg",
+  "photo":"https://static.toiimg.com/photo/60956683.cms",
   "scores":[
       5,
       1,
