@@ -34,17 +34,17 @@ var friends = [{
 
 {
   "name":"anushka",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "photo":"https://static.toiimg.com/photo/60956683.cms",
   "scores":[
-      2,
-      5,
-      3,
-      4,
       2,
       4,
       1,
+      4,
       2,
-      8,
+      4,
+      3,
+      2,
+      2,
       1
     ]
 },
@@ -54,11 +54,11 @@ var friends = [{
   "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
   "scores":[
       2,
-      5,
-      3,
       2,
+      3,
+      3,
       1,
-      4,
+      3,
       3,
       1,
       5,
@@ -70,12 +70,12 @@ var friends = [{
   "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
   "scores":[
       2,
-      5,
+      1,
       3,
-      2,
+      1,
       1,
       4,
-      3,
+      1,
       1,
       5,
       1
@@ -88,11 +88,11 @@ var friends = [{
   "scores":[
       2,
       5,
-      3,
+      4,
       2,
       1,
       4,
-      3,
+      4,
       1,
       5,
       1

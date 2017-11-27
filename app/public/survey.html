@@ -179,7 +179,8 @@
 							<h4 class="modal-title" id="myModalLabel">Best Match Ever </h4>
 						</div>
 						<div class="modal-body">
-							Friends
+							<div id="bestFriend"></div>
+							<img src="" id="bestFriendImage" width="200">
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -203,34 +204,39 @@
 				// console.log(friend.scores[2]);
 
 				var scoresAdded = function(){
-						for (var i = 0; i < 10 ; i++) {
-							if(friend.scores[i] === null )
-								{	console.log(" friend.scores[i]" + friend.scores[i]);
-									return false;
-								}
-						}
-					return true;
-				};
+					for (var i = 0; i < 10 ; i++) {
+						if(friend.scores[i] === null )
+							{	console.log(" friend.scores[i]" + friend.scores[i]);
+						return false;
+					}
+				}
+				return true;
+			};
 
 				// console.log(scoresAdded());
 				
 				if(friend.name === '' || friend.photo === '' || !scoresAdded())
-						alert("please fill out all the required fields and survey questions");
+					alert(" Please fill out all the required fields and survey questions");
 
 
-				var currentURL = window.location.origin;
+				else 
+					{
+						// var currentURL = window.location.origin;
+						// console.log("currentURL " + currentURL);
 
-				console.log("currentURL " + currentURL);
+						$.post("/api/friends", friend).done(function(data){
 
-				$.post("/api/friends", friend).done(function(data){
-					console.log(data);
-					$('#myModal').modal("show");
-
-			});
+							$("#bestFriend").html(data.bestFriendName);
+							$("#bestFriendImage").attr("src",data.bestFriendPhoto);
+							console.log(data);
+							console.log(data.bestFriendName);
+							console.log(data.bestFriendPhoto);
+							$('#myModal').modal("show");	
+						})
+					}
 
 	});
 
-
-		</script>
-	</body>
-	</html>
+</script>
+				</body>
+				</html>

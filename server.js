@@ -8,7 +8,7 @@ var PORT = process.env.PORT || 3000;
 
 // var friends = require('../data/friend.js');
 //sets up the express app to handle data parsing
-app.use(bodyparser.urlencoded({extended: false}));
+app.use(bodyparser.urlencoded({extended: true}));
 app.use(bodyparser.json());
 
 
